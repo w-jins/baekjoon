@@ -8,14 +8,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         long n = Integer.parseInt(br.readLine());
-        if (n == 1) {
-            bw.write(4 + "");
-        } else {
-            long a = (3 * (n - 1));
-            long b = (5 + (n - 2));
-
-            bw.write((a + b) + "");
-        }
+        bw.write(n * 4 + "");
 
         bw.flush();
         bw.close();
